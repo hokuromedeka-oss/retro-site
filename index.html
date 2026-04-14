@@ -6,12 +6,25 @@
 
 <style>
 body {
-    background-color: #000080; /* 紺 */
-    color: pink;
-    font-family: "MS Gothic", monospace;
-    text-align: center;
+  background: black;
+  color: #00ff00;
+  font-family: "MS Gothic", monospace;
+  text-shadow: 0 0 5px #00ff00;
 }
-
+setInterval(() => {
+  document.title = Math.random() > 0.5
+    ? "ACCESSING..."
+    : "YOU ARE BEING WATCHED";
+}, 2000);
+setInterval(() => {
+  if (Math.random() < 0.1) {
+    alert("SYSTEM ERROR: DATA CORRUPTED");
+  }
+}, 5000);
+[LOG 0032]
+subject: ████████
+status: unstable
+note: it is still watching
 a {
     color: hotpink;
     text-decoration: none;
